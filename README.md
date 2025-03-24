@@ -10,7 +10,7 @@ The software includes a login/sign-in feature that is triggered during app start
 
 Once on the home screen, the user sees a ScrollView displaying details about the hotel and a menu at the bottom of the screen, which allows navigation through different sections of the application. These include the "Profile" section, where the user can view and edit personal data (e-mail, password, phone number, payment method), and the "Booking" section, where the user can book a room and select a specific package to access additional hotel services.
 
-These are just a few features of the app. To explore the others, open the PowerPoint file "File name".
+These are just a few features of the app. To explore the others, open the PowerPoint file "Alpine_Hotel_Presentation.pptx".
 ## Testing
 The app runs smoothly on a variety of devices, and we have patched all the bugs we found. We also built a server using Flask to test the app within a subnetwork.
 ## Key strengths
