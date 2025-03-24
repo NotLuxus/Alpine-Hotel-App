@@ -1,4 +1,4 @@
-# 📲 Alpine Hotel (Android App)
+# ❄️📲 Alpine Hotel (Android App)
 Last update: 24/03/2025
 ## Disclaimer
 To make the app functional, a server is required, which is why I am not providing the APK. All the attached files are in Italian.
