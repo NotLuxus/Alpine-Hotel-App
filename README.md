@@ -18,12 +18,12 @@ The app runs smoothly on a variety of devices, and we have patched all the bugs 
 - **User-friendly UI:** A minimalistic and modern UI is designed to be both visually appealing and intuitive.
 - **UI Animations:** Navigating between screens feels smooth thanks to simple transition animations.
 - **UI Scalability and Responsiveness:** The UI is primarily built using ConstraintLayout to enhance performance and ensure adaptability across different devices.
-## ⌨️ Languages used
+## 💻 Languages used
 - Kotlin
 - XML
 - SQL
 - Python
-## 💻 Tools used
+## 📐 Tools used
 - Android Studio
 - MySQL Workbench
 - Git
