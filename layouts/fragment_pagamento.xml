@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <TextView
+            android:id="@+id/riepilogo_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AppTheme.DefaultText.Big.Bold.PrimaryColor"
+            android:textColor="@color/primaryColor"
+            android:text="@string/pagamento"
+            android:gravity="center_vertical"
+            app:drawableStartCompat="@drawable/ic_logo_xml_vector"
+            android:drawablePadding="4dp"
+            app:drawableTint="@color/primaryColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/dati_camera_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:drawablePadding="3dp"
+            android:textColor="@color/primaryColor"
+            android:text="@string/dati_camera"
+            app:drawableTint="@color/primaryColor"
+            app:drawableStartCompat="@drawable/ic_posti_letto"
+            app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@id/riepilogo_txt"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <TableLayout
+            android:id="@+id/table_layout_camera"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dati_camera_txt"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/tipologia_txt_up"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tipologia"
+                    style="@style/AppTheme.DefaultText.Small.Normal.PrimaryColor"
+                    android:layout_weight="1.5"
+                    android:ellipsize="end"/>
+
+                <TextView
+                    android:id="@+id/posti_letto_txt_up"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/posti_letto"
+                    style="@style/AppTheme.DefaultText.Small.Normal.PrimaryColor"
+                    android:layout_weight="1.5"
+                    android:ellipsize="end"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView
+                    android:id="@+id/prezzo_a_notte_txt_up"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prezzo_a_notte"
+                    style="@style/AppTheme.DefaultText.Small.Normal.PrimaryColor"
+                    android:layout_weight="1.3"
+                    android:ellipsize="end"
+                    android:layout_marginStart="10dp"/>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/tipologia_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    tools:text="Standard"
+                    style="@style/AppTheme.DefaultText.Small.Normal"
+                    android:layout_weight="1.5"
+                    android:ellipsize="end"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/posti_letto_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    tools:text="2"
+                    style="@style/AppTheme.DefaultText.Small.Normal"
+                    android:layout_weight="1.5"
+                    android:ellipsize="end"
+                    android:paddingHorizontal="28dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/prezzo_a_notte_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    tools:text="40.00€"
+                    style="@style/AppTheme.DefaultText.Small.Normal"
+                    android:layout_weight="1.3"
+                    android:ellipsize="end"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"/>
+
+            </TableRow>
+
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/informazioni_aggiuntive_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryColor"
+            android:text="@string/info_aggiuntive"
+            app:drawableTint="@color/primaryColor"
+            app:drawableStartCompat="@drawable/ic_info"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/barrier2"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <TableLayout
+            android:id="@+id/table_layout_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/informazioni_aggiuntive_txt"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/check_in_txt_up"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/check_in"
+                style="@style/AppTheme.DefaultText.Small.Normal.PrimaryColor"
+                android:layout_weight="1.5"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/check_out_txt_up"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/check_out"
+                style="@style/AppTheme.DefaultText.Small.Normal.PrimaryColor"
+                android:layout_weight="1.5"
+                android:ellipsize="end"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/pacchetto_txt_up"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/pacchetto"
+                style="@style/AppTheme.DefaultText.Small.Normal.PrimaryColor"
+                android:layout_weight="1.3"
+                android:ellipsize="end"
+                android:layout_marginStart="10dp"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/check_in_txt"
+                style="@style/AppTheme.DefaultText.Small.Normal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1.5"
+                android:ellipsize="end"
+                tools:text="DD/MM/AA" />
+
+            <TextView
+                android:id="@+id/check_out_txt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:text="DD/MM/AA"
+                style="@style/AppTheme.DefaultText.Small.Normal"
+                android:layout_weight="1.5"
+                android:ellipsize="end"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/pacchetto_txt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:text="Alpine"
+                style="@style/AppTheme.DefaultText.Small.Normal"
+                android:layout_weight="1.3"
+                android:ellipsize="end"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"/>
+
+            </TableRow>
+
+
+        </TableLayout>
+
+
+        <TextView
+            android:id="@+id/metodo_pagamento_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryColor"
+            android:text="@string/metodo_pagamento"
+            android:gravity="center_vertical"
+            android:drawablePadding="4dp"
+            app:drawableTint="@color/primaryColor"
+            app:drawableStartCompat="@drawable/ic_pagamento"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/barrier3"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="20dp"/>
+
+        <TableLayout
+            android:id="@+id/table_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/metodo_pagamento_txt"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/numero_carta_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/numero_carta"
+                    style="@style/AppTheme.DefaultText.Small.Normal.PrimaryColor"
+                    android:layout_weight="1.5"
+                    android:ellipsize="end"/>
+
+                <TextView
+                    android:id="@+id/proprietario_carta_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/proprietario_carta"
+                    style="@style/AppTheme.DefaultText.Small.Normal.PrimaryColor"
+                    android:layout_weight="1.5"
+                    android:ellipsize="end"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView
+                    android:id="@+id/data_di_scadenza_text_up"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/data_scadenza_carta"
+                    style="@style/AppTheme.DefaultText.Small.Normal.PrimaryColor"
+                    android:layout_weight="1.3"
+                    android:ellipsize="end"
+                    android:layout_marginStart="10dp"/>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/finisce_con_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    tools:text="Finisce con 0000"
+                    style="@style/AppTheme.DefaultText.Small.Normal"
+                    android:layout_weight="1.5"
+                    android:ellipsize="end"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/nome_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    tools:text="Mario Sturniolo"
+                    style="@style/AppTheme.DefaultText.Small.Normal"
+                    android:layout_weight="1.5"
+                    android:ellipsize="end"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/data_scadenza_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    tools:text="00/00"
+                    style="@style/AppTheme.DefaultText.Small.Normal"
+                    android:layout_weight="1.3"
+                    android:ellipsize="end"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/no_metodo_pagamento_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/AppTheme.DefaultText.Small.Normal"
+            android:text="@string/no_metodo_pagamento"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/metodo_pagamento_txt"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/registra_carta_btn"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:text="@string/registra_carta"
+            android:textSize="14sp"
+            android:drawableEnd="@drawable/ic_add"
+            android:backgroundTint="@color/primaryColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/no_metodo_pagamento_txt"
+            app:layout_constraintWidth_percent="0.65"
+            app:cornerRadius="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"/>
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="table_layout, registra_carta_btn"/>
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="table_layout_camera"/>
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="table_layout_info"/>
+
+
+        <TextView
+            android:id="@+id/totale_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryColor"
+            app:drawableTint="@color/primaryColor"
+            tools:text="Totale: 120,00€"
+            android:gravity="center_vertical"
+            app:drawableEndCompat="@drawable/ic_shop_bag"
+            android:drawablePadding="4dp"
+            app:layout_constraintTop_toBottomOf="@id/barrier"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:paddingBottom="10dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/prenota_btn"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:text="@string/acquista"
+            android:textSize="16sp"
+            android:backgroundTint="@color/primaryColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/totale_txt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_percent="0.85"
+            app:cornerRadius="15dp"
+            android:visibility="visible"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="56dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
