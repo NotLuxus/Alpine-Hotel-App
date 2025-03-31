@@ -1,7 +1,7 @@
 # ❄️📲 Alpine Hotel (Android App)
 Last update: 24/03/2025
 ## Disclaimer
-To make the app functional, a server is required, which is why I am not providing the APK. All the attached files are in Italian. Some of the XML layouts and some of the scripts were added respectively into the "layouts" and "scripts" folders. 
+To make the app functional, a server is required, which is why I am not providing the APK. All attached files are in Italian. Some XML layouts and scripts have been added to the "layouts" and "scripts" folders, respectively. 
 ## Introduction
 **Alpine Hotel** is an Android app that I developed with a colleague as part of a university project for an exam in the 2024/2025 academic year. This application follows a client-server architecture, with the app serving as the client and a Flask server handling the backend functionality.
 We created this app for a fictional hotel and successfully completed our work in less than a month.
